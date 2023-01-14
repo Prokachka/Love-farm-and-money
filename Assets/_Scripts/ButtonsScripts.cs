@@ -9,9 +9,11 @@ public class ButtonsScripts : MonoBehaviour
 
     */
     public GameObject[] plants;
+    public GameObject buttons;
 
   public void PlantCarrot()
     {
         plants[0].SetActive(true);
+        buttons.SetActive(false);
     }
 }

@@ -21,10 +21,10 @@ public abstract class Plants : MonoBehaviour
 
     private IEnumerator Growth()
     {
-        new WaitForSeconds(_growthTime / 3);
+        yield return new WaitForSeconds(_growthTime / 3);
         _growthFase[0].SetActive(false);
         _growthFase[1].SetActive(true);
-        new WaitForSeconds(_growthTime / 3);
+       yield return  new WaitForSeconds(_growthTime / 3);
         _growthFase[1].SetActive(false);
         _growthFase[2].SetActive(true);
         yield return null;
