@@ -5,7 +5,9 @@ using UnityEngine.Scripting.APIUpdating;
 
 public class CameraControl : MonoBehaviour
 {
+    [Header("Скорость перемещения камеры")]
     [SerializeField] private float _speed; //Скорость перемещения камеры
+    [Header("Скорость приближения/отдаления камеры")]
     [SerializeField] private float _zoomSpeed; //Скорость приближения/отдаления
     
     private void Update()
